@@ -747,6 +747,16 @@ li {
   margin-top: 36px;
   padding-top: 28px;
   border-top: 1px solid #2f4b45;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+}
+.footer-team > div {
+  flex: 1;
+}
+.footer-team .backtop {
+  flex-shrink: 0;
 }
 .footer-team h3 {
   color: var(--lime);
@@ -900,7 +910,8 @@ li {
   .rights-cards {
     grid-template-columns: 1fr 1fr;
   }
-  .footer-grid {
+  .footer-grid,
+  .footer-team {
     align-items: start;
     flex-direction: column;
   }
